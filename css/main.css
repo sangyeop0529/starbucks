@@ -525,7 +525,6 @@ header .badges .badge{
   margin-top: calc(1920px * 9 / 16 / -2);
   margin-left: calc(1920px / -2);
   width: 1920px;
-  background-color: red;
 }
 /* 가상요소는 인라인요소라서 블럭요소로 변경 */
 .youtube .youtube__area::before {
@@ -551,5 +550,23 @@ header .badges .badge{
   position: absolute;
   top: 0;
   left: 0;
+}
+.youtube .inner {
+  height: 700px;
+}
+.youtube .floating1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.youtube .floating2 {
+  position: absolute;
+  top: 350px;
+  left: 150px;
+}
+.youtube .floating3 {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
 }
 /* // YOUTUBE */
