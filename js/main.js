@@ -72,6 +72,17 @@ new Swiper('.promotion .swiper', {
   }
 });
 
+new Swiper('.awards .swiper', {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: true,
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
+});
+
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 // 처음에는 보여지고 있다.
@@ -122,3 +133,5 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
 })
+
+
