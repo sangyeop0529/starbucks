@@ -20,7 +20,6 @@ searchInputEl.addEventListener('blur', function() {//blur : focus의 반대
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
 
-
 // window : 브라우저 창(화면 자체)
 window.addEventListener('scroll', _.throttle(function() {
   console.log(window.scrollY);
@@ -51,7 +50,7 @@ window.addEventListener('scroll', _.throttle(function() {
 // _.throttle(함수, 시간)
 // gsap.to(요소, 지속시간, 옵션(객체));
 
-
+// gsap cdn scrolltoplugin 추가
 toTopEl.addEventListener('click', function () {
   gsap.to(window, .7, {
     scrollTo: 0,
